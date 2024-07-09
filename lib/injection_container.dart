@@ -23,5 +23,7 @@ void init() {
   sl.registerLazySingleton<UserRemoteDataSource>(() => UserRemoteDataSourceImpl(client: sl()));
 
   // External
-  sl.registerLazySingleton(() => http.Client());
+  sl.registerLazySingleton
+
+(() => http.Client());
 }
